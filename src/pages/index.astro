@@ -1,5 +1,7 @@
 ---
-
+import '../styles/global.css';
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
 ---
 
 <html lang="es">
@@ -12,11 +14,16 @@
   </head>
   <body>
 
-	<a href="/">Inicio</a>
-    <a href="/about/">Sobre mi</a>
-	<a href=""></a>
+	<Header/>
 	
     <h1>Astro</h1>
 	<h1>Mi primer sitio web</h1>
+
+	<Footer/>
+  
+  <script>
+    import "../scritps/menu.js";
+  </script>
+
   </body>
 </html>
