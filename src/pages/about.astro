@@ -31,14 +31,16 @@ const goal = 3;
     <p>Aca hay algunos datos sobre mi</p>
     <ul>
         <li>Me llamo {identity.firsName}</li>
-        <li>Vivo en {identity.country} y trabajo como {identity.occupation} </li>
-        <li>{identity.hobbies.length >= 2 && <li>Dos de mis aficiones son: {identity.hobbies[0]} y {identity.hobbies[2]}}</li>
+        <li>Vivo en {identity.country} y trabajo como {identity.occupation}. </li>
+        {identity.hobbies.length >= 2 && 
+            <li>Dos de mis aficiones son: {identity.hobbies[0]} y {identity.hobbies[2]}</li>
+        }
     </ul>
     <h1>About</h1>
     <h1>{pageTitle}</h1>
     <h2>Mostrando mi sitio web</h2>
     <ul>
-        {skills.map((skill) => <li>{skill}</li>)},
+        {skills.map((skill) => <li>{skill}</li>)}
     </ul>
 
     {happy && <p>¡Estoy feliz!</p>}
